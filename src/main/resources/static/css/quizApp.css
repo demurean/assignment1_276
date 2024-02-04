@@ -1,0 +1,104 @@
+body 
+{
+    background-color: antiquewhite;
+}
+
+h1 
+{
+    background-color: rgb(245, 199, 179);
+    text-align: left;
+}
+
+fieldset 
+{
+    background-color: wheat;
+}
+
+.startPrompt
+{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: medium;
+    font-weight: bold;
+    text-align: center;
+}
+
+.center-maker 
+{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+.container { 
+    height: 100px;
+    position: relative;
+  }
+
+button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #428bca;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+    margin-right: 10px;
+  }
+
+.Choices
+{
+    background-color: rgb(213, 175, 222);
+    height: fit-content;
+}
+
+.Question
+{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: medium;
+    font-weight: bold;
+    text-align: center;
+    background-color: rgb(202, 151, 216);
+    align-self: center;
+    height:75%;
+}
+
+.left
+{
+    float: left;
+    font-family: 'Courier New', Courier, monospace;
+    display: inline;
+}
+
+.right
+{
+    float: right;
+    font-family: 'Courier New', Courier, monospace;
+    display: inline;
+}
+
+.endGameFont
+{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: medium;
+    font-weight: bold;
+}
+
+.correctAnswer
+{
+    display: inline-block;
+    padding: .25em 0;
+    background: #5ecec6;
+    color: #ffffffde;
+}
+
+.wrongAnswer
+{
+    display: inline-block;
+    padding: .25em 0;
+    background: #ce5e5e;
+    color: #ffffffde;
+}

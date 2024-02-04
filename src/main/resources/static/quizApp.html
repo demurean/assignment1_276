@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Quiz</title>
+    <link rel="stylesheet" href="/css/quizApp.css">
+</head>
+<body>
+    <h1> Interactive Quiz by Arielle Felicia</h1>
+    <div id="startPage">
+        <fieldset>
+            <br>
+            <p class = "startPrompt"> are you ready? </p> <br>
+            <!-- FIX THE CENTRALISATION OF THE BUTTON WITH CSS LATER-->
+            <div class="container">
+                <div class="center-maker">
+                    <button onclick="startQuiz()" class = "startPrompt"> yes sirree </button>
+                </div>
+            </div>
+        </fieldset>
+    </div>
+
+
+    <div id="QnA" style="display:none;" class="Choices">
+        <h2 id="Question" class="Question"> test </h2>
+        <div class="container">
+            <div class="center-maker">
+                <input type="radio" id="a-radio" name="option" value="optA"> <label for="a-radio" id="a" >  test</label> <br>
+                <input type="radio" id="b-radio" name="option" value="optB"> <label for="b-radio" id="b" > test</label> <br>
+                <input type="radio" id="c-radio" name="option" value="optC"> <label for="c-radio" id="c" > test</label> <br>
+                <input type="radio" id="d-radio" name="option" value="optD"> <label for="d-radio" id="d" > test</label> <br>
+            </div>
+        </div>
+        <button onclick="previous()" id="prev" class="left"> prev </button> 
+        <button onclick="next()" id="next" class="right"> next </button> 
+        <button onclick="Submit()" style="display: none;" id="Submit" class="right"> submit </button>
+        <p> </p>
+    </div>
+
+    <!-- score and final results-->
+    <div id="results" style="display: none;">
+        <table>
+            <tr>
+                <td class="left"> Score: </td>
+                <td id="score_val" class="endGameFont"> </td>
+            </tr>
+        </table>
+        <fieldset id="outputResults" class="endGameFont"> </fieldset>
+    </div>
+    <script src="/js/quizLogic.js"> </script>
+</body>
+</html>
