@@ -5,4 +5,6 @@ RUN mvn clean package -DskipTests
 FROM openjdk:17.0.1-jdk-slim
 COPY --from=build /target/assi1-0.0.1-SNAPSHOT.jar assi1.jar
 EXPOSE 8080
-ENTRYPOINT["java","-jar","assi1.jar"]
+ENTRYPOINT["java",
+  "-jar",
+  "assi1.jar"]
